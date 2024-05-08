@@ -35,7 +35,12 @@ function App() {
       <Header header={header}/>
 
       <main style={MainStyle}>
-        <HomePage data={data} sectionTitles={sectionTitles} setCurrentCard={setCurrentCard}/>
+        <HomePage 
+          data={data} 
+          sectionTitles={sectionTitles} 
+          setCurrentCard={setCurrentCard}
+        />
+
         <Card currentCard={currentCard}/>
       </main>
 

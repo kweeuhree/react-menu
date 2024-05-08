@@ -7,7 +7,8 @@ const HomePage = ({data, sectionTitles, setCurrentCard}) => {
       border: '1px solid gray',
         padding: '1em',
         width: '50%',
-        overflow: 'auto'
+        overflow: 'auto',
+        backgroundColor: 'rgb(245, 185, 169, 0.5)'
     }
 
   return (

@@ -9,7 +9,8 @@ const Card = ({currentCard}) => {
         flexDirection: 'column',
         width: '50%',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: 'rgb(245, 185, 169, 0.5)'
     }
 
     const CardNameStyle = {
@@ -24,7 +25,8 @@ const Card = ({currentCard}) => {
       height: '20%',
       display: 'flex',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+      backgroundColor: 'white'
     }
 
   return (

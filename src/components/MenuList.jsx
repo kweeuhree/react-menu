@@ -4,7 +4,8 @@ const MenuList = ({menu, sectionTitle, setCurrentCard}) => {
   const MenuItemStyle = {
     border: '1px solid gray',
     padding: '0.5vh',
-    margin: '0.5vh'
+    margin: '0.5vh',
+    backgroundColor: 'white'
   };
 
   const MenuItemNameStyle = {
@@ -24,11 +25,14 @@ const MenuList = ({menu, sectionTitle, setCurrentCard}) => {
 
   return (
     <div>
+
       <div style={sectionTitleStyle}>{sectionTitle}</div>
+
       {menu.map((item) => (
        <div  key={item.id} style={MenuItemStyle} onClick={() => setCurrentCard(item)}>
          <div style={MenuItemNameStyle}>{item.name}</div>
         <div style={MenuItemDescriptionStyle}>{item.description}</div>
+        
        </div>
       ))}
       
